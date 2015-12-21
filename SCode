@@ -1,3 +1,6 @@
+
+### Tesint of R  Code #####
+
 NPO= readRDS("D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/npo_agg.rds")
 
 names(NPO)
