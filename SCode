@@ -1,5 +1,6 @@
 
 ### Tesint of R  Code #####
+### To generate the required data sets ## 
 
 NPO= readRDS("D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/npo_agg.rds")
 
