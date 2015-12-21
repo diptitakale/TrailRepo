@@ -1,0 +1,16 @@
+NPO= readRDS("D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/npo_agg.rds")
+
+names(NPO)
+
+#NPO2 = subset(NPO,NPO$snapshot_date %in% c('2012-03-15','2012-04-15','2012-05-15','2012-06-15','2012-07-15','2012-08-15','2012-09-15','2012-10-15','2012-11-15','2012-12-15','2012-13-15'))
+
+#NPO2 = NPO[NPO$snapshot_date %in% c(as.Date('2012-01-15'),as.Date('2012-02-15')),]
+
+
+#NPO2 = NPO[!NPO$snapshot_date %in% as.Date(c('2012-03-15','2012-04-15','2012-05-15','2012-06-15','2012-07-15','2012-08-15','2012-09-15','2012-10-15','2012-11-15','2012-12-15','2012-13-15')),]
+NPO2 = NPO[!NPO$snapshot_date %in% as.Date(c('2012-02-15','2012-03-15','2012-03-15')),]
+
+dim(NPO2)
+table(NPO2$snapshot_date)
+
+saveRDS(NPO2,"D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/Exclusion/npo_agg.rds")
