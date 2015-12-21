@@ -1,3 +1,5 @@
+
+testing purpose
 NPO= readRDS("D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/npo_agg.rds")
 
 names(NPO)
@@ -13,4 +15,4 @@ NPO2 = NPO[!NPO$snapshot_date %in% as.Date(c('2012-02-15','2012-03-15','2012-03-
 dim(NPO2)
 table(NPO2$snapshot_date)
 
-saveRDS(NPO2,"D:/Amsterdam/Dipti/ISA_TFSA_CAD/Attrition Model/Data/Exclusion/npo_agg.rds")
+saveRDS(NPO2,"ditpi/npo_agg.rds")
